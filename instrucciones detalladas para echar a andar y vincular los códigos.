@@ -1,0 +1,15 @@
+Pure Data
+Al abrir Pure Data abrir el archivo "PDemisor.pd" y dar doble click en los dos argumentos "connect localhost 57120"
+para activar el envio de datos al puerto 57120 el puerto en super collider
+No es necesario prender el DSP.
+
+Super Collider
+Iniciar Super Collider y prender el servidor con las teclas "CTRL+B"
+Abrir el archivo "SCreceptor.scd"
+Definir la conexión con PD hacer "CTRL+Enter" en la linea "OSCFunc({Synth.new(\arre)},'/chat').fix;" y "OSCFunc({Synth.new(\are)},'/oxo').fix;"
+Posteriormente adherimos los Synthdef  "arre" y "are" tecleando "CTRL+Enter"
+Para escuchar los Sintetizadores independientemente dar "CTRL+Enter" en las lineas de "Synth.new...".
+
+Para poder reproducir los sintetizadores es necesario mantener abierta la ventana de Pure Data y teclear:
+"h" para hacer sonar  el sintetizador "Arre"
+"j" para hacer sonar el sintetizador "Are".
